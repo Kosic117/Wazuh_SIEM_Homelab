@@ -69,6 +69,14 @@ The next phase focuses on security operations and detection validation, includin
 
 These capabilities will be documented with reproducible test cases, relevant alert evidence, and lessons learned as they are validated.
 
+## Key Engineering Decisions
+
+- **Infrastructure isolation:** Deployed Wazuh in a dedicated virtual machine to separate security monitoring from existing production-like home-server services.
+- **Secure administration:** Used an authenticated Tailscale overlay for remote access rather than directly exposing the Wazuh dashboard to the public internet.
+- **Network segmentation:** Maintained separation between intentionally vulnerable lab systems and normal home infrastructure.
+- **Resource management:** Validated CPU, memory, storage, and service health to ensure the SIEM could coexist with existing workloads.
+- **Evidence-based validation:** Verified endpoint connectivity, system inventory, and event ingestion rather than treating successful installation as proof of operational readiness.
+
 ## Technical Skills Demonstrated
 
 - Linux and Windows system administration
