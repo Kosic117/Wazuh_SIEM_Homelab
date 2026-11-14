@@ -1,0 +1,16 @@
+<!-- Wazuh 4.14.7 local_rules.xml excerpt. Tested for configuration validity; live printer/scanner matching not yet confirmed. -->
+<group name="local,windows,device_tuning,">
+  <rule id="100102" level="3">
+    <if_sid>60227</if_sid>
+    <field name="win.eventdata.className" type="pcre2">^PrintQueue$</field>
+    <description>Known printer queue recognized - informational</description>
+    <group>device_inventory,</group>
+  </rule>
+  <rule id="100103" level="3">
+    <if_sid>60227</if_sid>
+    <field name="win.eventdata.className" type="pcre2">^Image$</field>
+    <field name="win.eventdata.deviceId" type="pcre2">^SWD\DAFWSDProvider\.*ScannerService$</field>
+    <description>WSD scanner recognized - informational</description>
+    <group>device_inventory,</group>
+  </rule>
+</group>
