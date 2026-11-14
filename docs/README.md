@@ -1,25 +1,15 @@
-# Custom Detection Rules
+# Technical Documentation
 
-This directory contains custom Wazuh detection rules developed and tested as part of the SIEM home lab.
+This directory contains the primary documentation for the Wazuh SIEM home lab.
 
-## Current Rules
+## Available Documents
 
-### Windows Device Recognition Tuning
+- [Technical Report](TECHNICAL_REPORT.md) — Detailed implementation, configuration, troubleshooting, and findings.
+- [Follow-Up Checklist](FOLLOW_UP_CHECKLIST.md) — Outstanding tasks, validation steps, and planned improvements.
+- `Wazuh_Technical_Report.docx` — Downloadable Word version of the technical report.
 
-**File:** `local_device_tuning.xml`
+## Documentation Objectives
 
-Custom rules designed to reduce alert severity for recognized printer queues and WSD scanners while preserving visibility into other device-recognition events.
+The documentation records the project's implementation decisions, technical challenges, corrective actions, and remaining limitations.
 
-- Parent Wazuh rule: `60227`
-- Custom rule IDs: `100102`, `100103`
-- Target severity: Level 3
-- Configuration syntax validation: Passed
-- Live matching verification: Pending
-
-## Future Development
-
-- SSH brute-force detection and correlation
-- Additional Windows event tuning
-- Detection testing and validation
-
-Rules will be documented with their purpose, matching conditions, validation results, and known limitations.
+It is intended to demonstrate practical experience with SIEM administration, security monitoring, vulnerability assessment, and troubleshooting.
