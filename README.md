@@ -42,3 +42,11 @@ This portfolio project demonstrates security monitoring, alert triage, custom de
 Confirm custom rules against new printer/scanner events; verify CVE package fix availability and current vulnerability status; investigate Windows servicing errors and event queue flood; build and validate an SSH brute-force correlation rule.
 
 **Data handling:** Endpoint names are retained as lab identifiers. No Tailscale/overlay addresses, credentials, or private log payloads are published.
+
+## Security Operations Case Studies
+
+Practical security operations exercises conducted within the lab, documenting detection, assessment, remediation, and validation.
+
+| Case Study | Focus Area | Status |
+|---|---|---|
+| [001 — Linux Vulnerability Assessment and Remediation](vulnerability-management/001-lab-gateway-remediation/README.md) | Vulnerability Management | In Progress |
